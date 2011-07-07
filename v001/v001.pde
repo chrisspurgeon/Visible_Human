@@ -8,7 +8,7 @@ import java.awt.image.PixelGrabber;
 ControlP5 controlP5;
 int myColor = color(0,0,0);
 PImage img;
-String imagePath = "/Users/chrisspurgeon/Desktop/VHP_pngs/small/";
+String imagePath = "/Users/chrisspurgeon/Documents/Visible_Human/VHP_pngs/small/";
 int imageNumber;
 
 void setup() {
@@ -26,7 +26,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(0,0,0);
   img = loadImage(imagePath + "a_vm" + imageNumber + ".png");
   image(img, 100,50);
 }

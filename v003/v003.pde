@@ -11,7 +11,7 @@ void setup() {
   int xPos = 100;
   int yPos = 50;
 
-  String imagePath = "/Users/chrisspurgeon/Desktop/VHP_pngs/small/";
+  String imagePath = "/Users/chrisspurgeon/Documents/Visible_Human/VHP_pngs/small/";
   int imageNumber;
   // 1001 to 1377
 

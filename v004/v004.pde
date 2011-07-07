@@ -7,7 +7,7 @@ PImage imgslice;
 int xPos = 100;
 int yPos = 50;
 
-String imagePath = "/Users/chrisspurgeon/Desktop/VHP_pngs/small/";
+String imagePath = "/Users/chrisspurgeon/Documents/Visible_Human/VHP_pngs/small/";
 int imageNumber = 1001;
 
 
@@ -27,7 +27,7 @@ void draw() {
   else {
 
     PImage img = loadImage(imagePath + "a_vm" + imageNumber + ".png");
-    imgslice = img.get(308,0,1,364);
+    imgslice = img.get(200,0,1,364);  // was 308,
     //    image(imgslice,xPos,yPos);
     set(xPos,yPos,imgslice);
     xPos++;
