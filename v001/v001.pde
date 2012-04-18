@@ -23,6 +23,8 @@ void setup() {
   // use Slider.FIX or Slider.FLEXIBLE to change the slider handle
   // by default it is Slider.FIX
   s1.setSliderMode(Slider.FLEXIBLE);
+  s1.setLabelVisible(false);
+
   imageNumber = 1001;
   img = loadImagex(imagePath + "a_vm" + imageNumber + ".png");
 }

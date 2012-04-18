@@ -10,6 +10,8 @@ int yPos = 50;
 String imagePath = "/Users/chrisspurgeon/Documents/Visible_Human/VHP_pngs/small/";
 int imageNumber = 1001;
 
+int slice;
+
 
 
 
@@ -19,15 +21,13 @@ void setup() {
 }
 
 void draw() {
-  // 1001 to 1377
+slice = floor(random(400));
+xPos = 100;
 
-  if (imageNumber > 1600) {
-    noLoop();
-  } 
-  else {
+for (imageNumber = 1001; imageNumber <=1700; imageNumber++) {
 
     PImage img = loadImage(imagePath + "a_vm" + imageNumber + ".png");
-    imgslice = img.get(308,0,1,364);  // was 308,
+    imgslice = img.get(slice,0,1,364);  // was 308,
     //    image(imgslice,xPos,yPos);
     set(xPos,yPos,imgslice);
     xPos++;
